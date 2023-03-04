@@ -18,6 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/product/create', [ProductController::class,'create']);
-Route::get('/product/index', [ProductController::class,'index']);
-Route::get('/product/edit', [ProductController::class,'edit']);
+Route::get('/create', [ProductController::class,'create']);
+Route::get('/index', [ProductController::class,'index']);
+Route::get('/edit', [ProductController::class,'edit']);
+
